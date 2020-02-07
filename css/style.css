@@ -47,6 +47,12 @@ body {
     line-height: 16px;
     margin-right: 24px;
     color: #FFFFFF;
+    transition: color 0.2s;
+
+}
+
+.menu-link:hover {
+    color: #9D2929;
 }
 
 .social-link {
@@ -60,6 +66,7 @@ body {
     margin-bottom: 16px;
     display: block;
     animation-delay: 0.1s;
+    z-index: 1;
 }
 
 .rating {
@@ -106,6 +113,11 @@ body {
     border: none;
     padding: 22px 72px;
     animation-delay: 1s;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: brown;
 }
 
 .button:active {
@@ -154,6 +166,9 @@ body {
 }
 
 .card {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
     width: 164px;
     height: 113px;
     border-radius: 8px;
@@ -177,6 +192,7 @@ body {
 }
 
 .series-1 {
+
     background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
     url("../img/series/series1.jpg") no-repeat center center;
     background-size: cover;
@@ -294,6 +310,7 @@ body {
 
     .menu-button-active {
         height: 0;
+        z-index: 5;
     }
 
     .menu-button-active:before {
@@ -319,6 +336,7 @@ body {
 
     .header-active {
         display: flex;
+        z-index: 4;
     }
 
     .logo {
